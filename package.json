@@ -1,7 +1,7 @@
 {
-  "name": "plugin",
-  "version": "0.2.0",
-  "repository": "git@github.com:mn-rocket-league/rl-plugin.git",
+  "name": "bclib",
+  "version": "1.0.0",
+  "repository": "git@github.com:bnylund/bclib.git",
   "author": "Benjamin Nylund <ben@nylund.us>",
   "scripts": {
     "build": "node build.js",
