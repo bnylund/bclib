@@ -1,0 +1,9 @@
+[submodule "lib/socket.io-client-cpp"]
+	path = lib/socket.io-client-cpp
+	url = git@github.com:socketio/socket.io-client-cpp.git
+[submodule "lib/json"]
+	path = lib/json
+	url = git@github.com:nlohmann/json.git
+[submodule "lib/Simple-WebSocket-Server"]
+	path = lib/Simple-WebSocket-Server
+	url = git@gitlab.com:eidheim/Simple-WebSocket-Server.git
