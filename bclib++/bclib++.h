@@ -1,5 +1,9 @@
 #pragma once
 
+#ifndef ASIO_STANDALONE
+  #define ASIO_STANDALONE
+#endif
+
 #define WIN32_LEAN_AND_MEAN
 #define BCLIB_VERSION "1.0.0"
 

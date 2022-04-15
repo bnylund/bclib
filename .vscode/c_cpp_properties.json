@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}\\lib\\socket.io-client-cpp\\lib\\asio\\asio\\include\\",
+                "${workspaceFolder}\\lib\\socket.io-client-cpp\\lib\\catch\\single_include",
+                "${workspaceFolder}\\lib\\socket.io-client-cpp\\lib\\rapidjson\\include",
+                "${workspaceFolder}\\lib\\socket.io-client-cpp\\lib\\websocketpp",
+                "${workspaceFolder}\\lib\\socket.io-client-cpp\\src",
+                "${workspaceFolder}\\lib\\Simple-WebSocket-Server",
+                "${workspaceFolder}\\lib\\OpenSSL\\include",
+                "${workspaceFolder}\\lib\\json\\single_include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
