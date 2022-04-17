@@ -81,8 +81,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>H:\RL\bclib++\bclib++;H:\RL\bclib++\lib\socket.io-client-cpp\lib\websocketpp;H:\RL\bclib++\lib\socket.io-client-cpp\src;H:\RL\bclib++\lib\json\single_include;H:\RL\bclib++\lib\socket.io-client-cpp\lib\asio\asio\include;H:\RL\bclib++\lib\Simple-WebSocket-Server;H:\RL\bclib++\lib\OpenSSL\include;$(IncludePath)</IncludePath>
-    <LibraryPath>H:\RL\bclib++\x64\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>H:\RL\bclib++\bclib++;H:\RL\bclib++\lib\json\single_include;H:\RL\bclib++\lib\Simple-WebSocket-Server;H:\RL\bclib++\lib\OpenSSL\include;H:\RL\bclib++\lib\socket.io-client-cpp\lib\asio\asio\include;H:\RL\bclib++\lib\socket.io-client-cpp\src;$(IncludePath)</IncludePath>
+    <LibraryPath>H:\RL\bclib++\lib;H:\RL\bclib++\lib\OpenSSL\lib\VC\static;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -127,19 +127,16 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;_WIN32_WINDOWS;_WEBSOCKETPP_CPP11_TYPE_TRAITS_;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_RANDOM_DEVICE_;_WEBSOCKETPP_CPP11_FUNCTIONAL_;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_WEBSOCKETPP_CPP11_TYPE_TRAITS_;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_STL_;_WEBSOCKETPP_CPP11_RANDOM_DEVICE_;_WEBSOCKETPP_CPP11_FUNCTIONAL_;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>bclib++.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libssl64MT.lib;libcrypto64MT.lib;crypt32.lib;sioclient.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

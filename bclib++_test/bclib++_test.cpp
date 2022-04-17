@@ -1,11 +1,17 @@
 #include <iostream>
-#include "bclib++.h"
+#include "bclib++.hpp"
 
 int main()
 {
-    BCLib *lib = new BCLib("ROCKET_LEAGUE", "Plugin Test", [&](std::string msg) {
-        std::cout << msg << std::endl;
-    });
-    lib->StartCBServer();
+    try{
+
+        BCLib* lib = new BCLib("ROCKET_LEAGUE", "Plugin Test", [&](std::string msg) {
+            std::cout << msg << std::endl;
+        });
+        lib->StartCBServer();
+        std::cout << "Server stopped." << std::endl;
+    } catch(std::exception ex) {
+        std::cout << ex.what() << std::endl;
+    }
     return 0;
 }

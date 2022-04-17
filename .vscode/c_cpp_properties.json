@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}\\lib\\socket.io-client-cpp\\lib\\asio\\asio\\include\\",
-                "${workspaceFolder}\\lib\\socket.io-client-cpp\\lib\\catch\\single_include",
+                "${workspaceFolder}\\lib\\socket.io-client-cpp\\lib\\catch\\src\\catch2",
                 "${workspaceFolder}\\lib\\socket.io-client-cpp\\lib\\rapidjson\\include",
                 "${workspaceFolder}\\lib\\socket.io-client-cpp\\lib\\websocketpp",
                 "${workspaceFolder}\\lib\\socket.io-client-cpp\\src",
@@ -18,8 +18,8 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
             "intelliSenseMode": "windows-msvc-x64",
             "configurationProvider": "ms-vscode.cmake-tools"
         }

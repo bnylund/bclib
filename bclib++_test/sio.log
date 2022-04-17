@@ -1,0 +1,26 @@
+[4/16/2022 23:52:23] Connection failed.
+[4/16/2022 23:52:23] Reconnect for attempt: 0
+[4/16/2022 23:52:24] Reconnecting...
+[4/16/2022 23:52:28] Connection failed.
+[4/16/2022 23:52:28] Reconnect for attempt: 1
+[4/16/2022 23:52:29] Reconnecting...
+[4/16/2022 23:52:34] Connection failed.
+[4/17/2022 0:5:3] Connected.
+[4/17/2022 0:5:3] encoded payload length: 2
+[4/17/2022 0:5:3] encoded payload length: 48
+[4/17/2022 0:8:29] Connection failed.
+[4/17/2022 0:8:29] Reconnect for attempt: 0
+[4/17/2022 0:8:30] Reconnecting...
+[4/17/2022 0:8:34] Connection failed.
+[4/17/2022 0:8:34] Reconnect for attempt: 1
+[4/17/2022 0:8:35] Reconnecting...
+[4/17/2022 0:8:36] Connected.
+[4/17/2022 0:8:36] encoded payload length: 2
+[4/17/2022 0:8:36] encoded payload length: 21
+[4/17/2022 0:8:49] Client Disconnected.
+[4/17/2022 0:8:49] clear timers
+[4/17/2022 0:8:49] Reconnect for attempt: 0
+[4/17/2022 0:8:50] Reconnecting...
+[4/17/2022 0:8:54] Connection failed.
+[4/17/2022 0:8:54] Reconnect for attempt: 1
+[4/17/2022 0:8:55] Reconnecting...

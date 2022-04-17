@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bclib++", "bclib++\bclib++.vcxproj", "{C77756EB-28D5-4425-A476-68966050CB36}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bclib++_test", "bclib++_test\bclib++_test.vcxproj", "{00572799-2272-4D88-B0C9-BEA514AE635C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C77756EB-28D5-4425-A476-68966050CB36} = {C77756EB-28D5-4425-A476-68966050CB36}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

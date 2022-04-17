@@ -63,7 +63,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -113,7 +113,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>H:\RL\bclib++\lib\socket.io-client-cpp\lib\asio\asio\include;H:\RL\bclib++\lib\socket.io-client-cpp\lib\catch\include;H:\RL\bclib++\lib\socket.io-client-cpp\lib\rapidjson\include;H:\RL\bclib++\lib\socket.io-client-cpp\lib\websocketpp;H:\RL\bclib++\lib\socket.io-client-cpp\src;H:\RL\bclib++\lib\json\single_include;H:\RL\bclib++\lib\Simple-WebSocket-Server;H:\RL\bclib++\lib\OpenSSL\include;$(IncludePath)</IncludePath>
-    <SourcePath>H:\RL\bclib++\lib\socket.io-client-cpp\src;$(SourcePath)</SourcePath>
     <LibraryPath>H:\RL\bclib++\lib\OpenSSL\lib\VC\static;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-TLS|x64'">
@@ -194,16 +193,15 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;_WIN32_WINDOWS;_WEBSOCKETPP_CPP11_TYPE_TRAITS_;ASIO_STANDALONE;_WEBSOCKETPP_CPP11_RANDOM_DEVICE_;_WEBSOCKETPP_CPP11_FUNCTIONAL_;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_WIN32_WINDOWS;_WINSOCK_DEPRECATED_NO_WARNINGS;_WEBSOCKETPP_CPP11_TYPE_TRAITS_;ASIO_STANDALONE;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;_WEBSOCKETPP_CPP11_STL_;_WEBSOCKETPP_CPP11_RANDOM_DEVICE_;_WEBSOCKETPP_CPP11_FUNCTIONAL_;NDEBUG;_LIB;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OmitFramePointers>false</OmitFramePointers>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -242,14 +240,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="bclib++.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\lib\socket.io-client-cpp\src\internal\sio_client_impl.cpp" />
-    <ClCompile Include="..\lib\socket.io-client-cpp\src\internal\sio_packet.cpp" />
-    <ClCompile Include="..\lib\socket.io-client-cpp\src\sio_client.cpp" />
-    <ClCompile Include="..\lib\socket.io-client-cpp\src\sio_socket.cpp" />
-    <ClCompile Include="bclib++.cpp" />
+    <ClInclude Include="bclib++.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
