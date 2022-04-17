@@ -3,6 +3,6 @@
 ## Building
 
 ```
-git clone --recurse-submodules git@github.com:bnylund/bclib++.git
+git clone --recurse-submodules git@github.com:bnylund/bclib.git
 yarn build
 ```
